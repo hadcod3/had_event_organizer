@@ -12,7 +12,7 @@ const Header = () => {
         <div className="wrapper flex items-center justify-between">
             <Link href="/" className="w-36 flex items-center gap-5">
                 <Image
-                    src="/icons/aj_logo.png"
+                    src="/assets/icons/aj_logo.png"
                     alt="Had Wedding Logo"
                     width={30}
                     height={30}
