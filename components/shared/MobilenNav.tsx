@@ -26,7 +26,7 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
                 <Image  
-                    src="/icons/aj_logo.png"
+                    src="/assets/icons/aj_logo.png"
                     alt="Had Wedding Logo"
                     width={20}
                     height={20}
