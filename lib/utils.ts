@@ -72,14 +72,14 @@ export function formUrlQuery({ params, key, value }: UrlQueryParams) {
 }
 
 export function removeKeysFromQuery({ params, keysToRemove }: RemoveUrlQueryParams) {
-  const currentUrl = qs.parse(params)
+  const currentUrl = qs.parse(params);
 
   keysToRemove.forEach(key => {
-    delete currentUrl[key]
-  })
+    delete currentUrl[key];
+  });
 
   return qs.stringifyUrl(
-    {qu
+    {
       url: window.location.pathname,
       query: currentUrl,
     },
