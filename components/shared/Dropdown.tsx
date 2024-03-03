@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Input } from "../ui/input"
   
-  
+    
 
 type DropdownProps = {
     value? : string
@@ -32,7 +32,7 @@ const Dropdown = ({ value, onChangeHandler } : DropdownProps) => {
     const [ categories, setCategories ] = useState<ICategory[]>([])
     const [newCategory, setNewCategory] = useState('')
     const handleAddCategory = () => {
-        
+
     }
 
     return (

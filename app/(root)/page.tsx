@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../../styles/home.module.css"
+import { imageList } from "@/constants";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
             <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
                 <div className="flex flex-col justify-center gap-8">
                     <h1 className="h1-bold">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit!
+                        Make your dream wedding come true with us!
                     </h1>
                     <p className="p-regular-20 md:p-regular-24">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus optio magnam sint veniam nulla error vero amet nostrum accusamus.
@@ -19,12 +21,22 @@ export default function Home() {
                     </Button>
                 </div>
                 <Image
-                    src="/assets/images/hero.png"
-                    alt="hero"
-                    width={1000}
-                    height={1000}
-                    className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
+                    src="/assets/images/flower.png"
+                    alt="flower"
+                    width={1200}
+                    height={1200}
+                    className="max-h-[70vh] object-contain object-center 2xl:max-h-[80vh]"
                 />
+            </div>
+        </section>
+
+        <section className={styles.gallery_view}>
+            <div className={`${styles.image_container} py-10`}>
+                <Image className={`${styles.image_box} ${styles.image_1} bg-slate-300`} src={`/assets/images/image-1.jpg`} width={200} height={200} alt="gallery_images" />
+                <Image className={`${styles.image_box} ${styles.image_2}`} src={`/assets/images/image-2.jpg`} width={200} height={200} alt="gallery_images" />
+                <Image className={`${styles.image_box} ${styles.image_3}`} src={`/assets/images/image-3.jpg`} width={200} height={200} alt="gallery_images" />
+                <Image className={`${styles.image_box} ${styles.image_4}`} src={`/assets/images/image-4.jpg`} width={200} height={200} alt="gallery_images" />
+                <Image className={`${styles.image_box} ${styles.image_5}`} src={`/assets/images/image-5.jpg`} width={200} height={200} alt="gallery_images" />
             </div>
         </section>
 
@@ -35,6 +47,66 @@ export default function Home() {
                 CategoryFilter
             </div>
         </section>
+
+        <section className={`${styles.about_section} bg-slate-600 py-14 md:py-10"`} id="about">
+            <div className={styles.grand_image}>
+                <div className={`${styles.border_image} border-y-4 border-y-slate-800`}></div>
+                <Image
+                src={"/assets/images/image-2.jpg"}
+                className={styles.center_image}
+                alt="center image"
+                width={300}
+                height={300}
+                />
+            </div>
+            <div className={styles.about_container}>
+                <div className={`${styles.about_box} ${styles.about_box_1} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_2} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_3} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_4} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_5} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_6} bg-slate-800`}></div>
+            </div>
+        </section>
+
+        {/* <section className={`${styles.greeting_container} bg-slate-800`}>
+            <div className={styles.circle_box}>
+                <div className={styles.title}>
+                    <Image
+                    src={"/assets/icons/logo.png"}
+                    className={styles.icon_logo}
+                    alt="logo"
+                    width={40}
+                    height={40}
+                    />
+                    <h5 className="text-lg">wedding agency</h5>
+                    <Image
+                    src={"/assets/images/text_logo.png"}
+                    className={styles.text_logo}
+                    alt="text logo"
+                    width={300}
+                    height={50}
+                    />
+                </div>
+                <div className={styles.flower_border}>
+                    <Image
+                    src={"/assets/images/clover.png"}
+                    className={`${styles.flower_image} ${styles.fi_1}`}
+                    alt="clover"
+                    width={180}
+                    height={300}
+                    />
+                    <Image
+                    src={"/assets/images/clover.png"}
+                    className={`${styles.flower_image} ${styles.fi_2}`}
+                    alt="clover"
+                    width={180}
+                    height={300}
+                    />
+                </div>
+            </div>
+            <div className={`${styles.square_box} bg-slate-900`}></div>
+        </section> */}
     </>
   );
 }
