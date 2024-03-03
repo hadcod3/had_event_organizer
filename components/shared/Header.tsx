@@ -10,14 +10,13 @@ const Header = () => {
   return (
     <header className="w-full border-b">
         <div className="wrapper flex items-center justify-between">
-            <Link href="/" className="w-36 flex items-center gap-5">
+            <Link href="/" className="flex items-center gap-5">
                 <Image
-                    src="/assets/icons/aj_logo.png"
+                    src="/assets/images/logo.png"
                     alt="Had Wedding Logo"
-                    width={30}
-                    height={30}
+                    width={200}
+                    height={40}
                 />
-                <div className="font-bold text-nowrap text-3xl">Had Wedding</div>
             </Link>
 
             <SignedIn>
