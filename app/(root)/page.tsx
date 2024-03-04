@@ -48,9 +48,9 @@ export default function Home() {
             </div>
         </section>
 
-        <section className={`${styles.about_section} bg-slate-600 py-14 md:py-10"`} id="about">
+        <section className={`${styles.about_section} bg-gray-100 py-14 md:py-10"`} id="about">
             <div className={styles.grand_image}>
-                <div className={`${styles.border_image} border-y-4 border-y-slate-800`}></div>
+                <div className={`${styles.border_image} border-y-4 border-y-gray-400`}></div>
                 <Image
                 src={"/assets/images/image-2.jpg"}
                 className={styles.center_image}
@@ -60,12 +60,12 @@ export default function Home() {
                 />
             </div>
             <div className={styles.about_container}>
-                <div className={`${styles.about_box} ${styles.about_box_1} bg-slate-800`}></div>
-                <div className={`${styles.about_box} ${styles.about_box_2} bg-slate-800`}></div>
-                <div className={`${styles.about_box} ${styles.about_box_3} bg-slate-800`}></div>
-                <div className={`${styles.about_box} ${styles.about_box_4} bg-slate-800`}></div>
-                <div className={`${styles.about_box} ${styles.about_box_5} bg-slate-800`}></div>
-                <div className={`${styles.about_box} ${styles.about_box_6} bg-slate-800`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_1} bg-gray-200`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_2} bg-gray-200`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_3} bg-gray-200`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_4} bg-gray-200`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_5} bg-gray-200`}></div>
+                <div className={`${styles.about_box} ${styles.about_box_6} bg-gray-200`}></div>
             </div>
         </section>
 

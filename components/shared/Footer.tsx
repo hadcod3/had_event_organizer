@@ -4,7 +4,7 @@ import styles from "../../styles/home.module.css"
 
 const Footer = () => {
     return (
-        <footer className={`${styles.greeting_container} bg-slate-800`}>
+        <footer className={`${styles.greeting_container} bg-gray-200`}>
             <section>
                 <div className={styles.circle_box}>
                     <div className={styles.title}>
@@ -41,7 +41,7 @@ const Footer = () => {
                         />
                     </div>
                 </div>
-                <div className={`${styles.square_box} bg-slate-900`}></div>
+                <div className={`${styles.square_box} bg-gray-300`}></div>
             </section>
             {/* <div className="flex-center wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row">
             <Link href="/" className="flex items-center gap-5">
