@@ -72,7 +72,7 @@ const Dropdown = ({ value, onChangeHandler } : DropdownProps) => {
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
                     <AlertDialogAction onClick={() => startTransition(handleAddCategory)}>Add</AlertDialogAction>
                     </AlertDialogFooter>
-                </AlertDialogContent>
+                </AlertDialogContent> 
                 </AlertDialog>
             </SelectContent>
         </Select>   
