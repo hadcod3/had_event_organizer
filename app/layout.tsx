@@ -12,9 +12,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "Had Wedding",
     description: "A wedding organizer agency",
-//   icons: {
-//     icon: '/public/icons/logo.png',
-//   }
     icons: {
         icon: '/favicon.ico',
     }
